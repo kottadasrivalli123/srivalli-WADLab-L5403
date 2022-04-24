@@ -1,0 +1,75 @@
+h1{
+	color: lavender;
+}
+h2{
+	color: deeppink;
+}
+h3{
+	color: yellowgreen;
+}
+h4{
+	color: lemonchiffon;
+}
+h5{
+	color: rebeccapurple;
+}
+h6{
+	color: saddlebrown;
+}
+p{
+	font-size: 15px;
+	font-style: oblique;
+}
+b{
+	color: gray;
+}
+i{
+	font-size: 10px;
+	color: fuchsia;
+}
+sub{
+	color: violet;
+}
+sup{
+	color: blueviolet;
+}
+u{
+	color: aqua;
+	font-style: oblique;
+}
+strike{
+	color: palegreen;
+}
+del{
+	color: honeydew;
+}
+q{
+	color: ivory;
+}
+ins{
+	color: lawngreen;
+}
+mark{
+	color: lightblue;
+}
+center{
+	color: lightcoral;
+}
+strong{
+	color: orange;
+}
+small{
+	color: orchid;
+}
+address{
+	color: lightgreen;
+}
+code{
+	color: light rosybrown;
+}
+abbr{
+	color: peachpuff;
+}
+acronym{
+	color: ivory;
+}
