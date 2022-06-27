@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js boxes</title>
+	<script type="text/javascript">
+		function disp(){
+			alert("This is alert box");
+		}
+		function disp1(){
+			var r=confirm("Press a button");
+			if(r==true){
+				document.write("You pressed Ok!");
+			}
+			else{
+				document.write("You pressed cancel!");
+			}
+		}
+		function disp2(){
+			var name=prompt("Please enter email address","srivalli0321@gmail.com");
+			if(name != null && name!=""){
+				document.write("Hello" +name+ "This is valid mail address");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" onclick="disp()" value="display alert box"></input>
+	<input type="button" onclick="disp1()" value="display a confirm box"></input>
+	<input type="button" onclick="disp2()" value="display a prompt box"></input>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            function display(value) {
+                document.getElementById("a").value += value;
+            }
+            function cal(){
+                var n1 = document.getElementById("a").value;
+                var n2 = eval(n1);
+                document.getElementById("a").value =n2;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>CALUCULATOR</h1>
+        <form >
+            <table border="1px" cellspacing="4px" cellpadding="10px">
+                <tr><td colspan="3"><input type="text" id="a" placeholder="0" disabled/></td>
+                    <td><input type="button" id="." value="." onclick="display('.')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="0" value="0" onclick="display('0')"/></td>
+                    <td><input type="button" id="1" value="1" onclick="display('1')"/></td>
+                    <td><input type="button" id="2" value="2" onclick="display('2')"/></td>
+                    <td><input type="button" id="op1" value="+" onclick="display('+')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="3" value="3" onclick="display('3')"/></td>
+                    <td><input type="button" id="4" value="4" onclick="display('4')"/></td>
+                    <td><input type="button" id="5" value="5" onclick="display('5')"/></td>
+                    <td><input type="button" id="sub" value="-" onclick="display('-')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="6" value="6" onclick="display('6')"/></td>
+                    <td><input type="button" id="7" value="7" onclick="display('7')"/></td>
+                    <td><input type="button" id="8" value="8" onclick="display('8')"/></td>
+                    <td><input type="button" id="mul" value="" onclick="display('')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="9" value="9" onclick="display('9')"/></td>
+                    <td><input type="reset"  value="C"/></td>
+                    <td><input type="button" id="equal" value="="  onclick = "cal()"/></td>
+                    <td><input type="button" id="div" value="/" onclick="display('/')"/></td>
+                </tr>
+            </table>
+        </form>
+        </center>
+    </body>
+</html>
