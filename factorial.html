@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Experimnet - 7</title>
+		 <script>
+			function fact() {
+				const num = parseInt(prompt("Enter the number"))
+				if(num < 0) {
+					document.write("Factorial doesn't exist")
+				}
+				else {
+					let fact = 1
+					for(var i = 1; i <= num; i++) {
+						fact *= i;
+					}
+					document.write("Factorial of " + num + " is " + fact)
+				}
+			}
+
+			function fib() {
+				const num = parseInt(prompt("Enter the number"))
+				var n1 = 0
+				var n2 = 1
+				var n3 = 0
+				document.write("Fibonacci Numbers upto "+num+" is")
+				for(var i = 1; i <= num; i++) {
+					document.write(n1+" ")
+					n3 = n1 + n2
+					n1 = n2
+					n2 = n3
+				}
+			}
+
+			function primes() {
+				const n = parseInt(prompt("Enter the number"))
+				document.write("Prime Numbers upto "+n+" are: ")
+				for(var i = 2; i <= n; i++) {
+					var count = 0
+					for(var j = 2; j <= parseInt(i / 2); j++) {
+						if(i % j == 0) {
+							count++;
+						}
+					}
+					if(count == 0) {
+						document.write(i + " ");
+					}
+				}
+			}
+
+			function isPal() {
+				const num = parseInt(prompt("Enter the number"))
+				var rev = 0
+				var n = num
+				while(n != 0) {
+					rev = rev * 10 + n % 10;
+					n = parseInt(n / 10);
+				}
+				if(rev == num) {
+					document.write(num + " is a Palindrome")
+				}
+				else {
+					document.write(num + " not is a Palindrome")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<i><h1>Factorial</h1>
+		<input type="button" value="Factorial" onclick= "fact()">
+		<br>
+		<h1>Fibonacci Numbers upto the given range</h1>
+		<input type="button" value="Fibonacci" onclick="fib()">
+		<br>
+		<h1>Prime Numbers upto the given range</h1>
+		<input type="button" value="Primes" onclick="primes()">
+		<br>
+		<h1>Palindrome or not</h1>
+		<input type="button" value="Palindrome" onclick="isPal()">
+		<br>
+	</body>
+</html>
