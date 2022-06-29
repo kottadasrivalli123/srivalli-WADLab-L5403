@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo on HTML dOM</title>
+	<script type="text/javascript">
+		function change(){
+			var element=document.getElementById("ai");
+			alert(element.innerHTML);
+			element.innerHTML="Dept of Artificial Intelligence"
+			var element1=document.getElementsByClassName("result");
+			element1[1].innerHTML="Results will be updated soon <br>";
+			var element2=document.getElementsByTagName("h2");
+			element2[0].innerHTML =element2[0].innerHTML +" of II-II";
+			element2[0].align="center";
+		}
+		function changedata(ele){
+			ele.innerHTML="II-II results"
+		}
+	</script>
+</head>
+<body>
+	<h1 id="ai"onclick="this.innerHTML='Dept of CSE' ">Dept of AI</h1>
+	<p>Welcome to WAD class</p>
+	<h2 class="result" align="left" onclick=
+	"changedata(this)">Results</h2>
+	<span class="result"></span>
+	<input type="button" value="Change Data" onclick="change()">
+</body>
+</html>
